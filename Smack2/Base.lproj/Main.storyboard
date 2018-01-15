@@ -289,7 +289,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="UUz-sQ-184" eventType="touchUpInside" id="Ytt-K8-uR6"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="itV-mM-Sjy">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.3673953969" green="0.53302006710000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -299,14 +306,19 @@
                             <constraint firstItem="zcH-q9-465" firstAttribute="top" secondItem="sdq-yL-2Un" secondAttribute="bottom" constant="40" id="9XX-Jr-3JK"/>
                             <constraint firstItem="8wJ-va-NdX" firstAttribute="top" secondItem="DPE-sw-LRU" secondAttribute="top" constant="60" id="FmV-oK-i5c"/>
                             <constraint firstItem="DPE-sw-LRU" firstAttribute="trailing" secondItem="i0C-kf-8Vq" secondAttribute="trailing" constant="16" id="IDK-zw-zv5"/>
+                            <constraint firstItem="itV-mM-Sjy" firstAttribute="centerY" secondItem="0fa-Eh-DvC" secondAttribute="centerY" constant="-100" id="L7t-MX-vpp"/>
                             <constraint firstItem="i0C-kf-8Vq" firstAttribute="top" secondItem="DPE-sw-LRU" secondAttribute="top" constant="8" id="WPC-3X-FcM"/>
                             <constraint firstItem="sdq-yL-2Un" firstAttribute="centerX" secondItem="0fa-Eh-DvC" secondAttribute="centerX" id="flX-T9-ulE"/>
                             <constraint firstItem="PAg-D2-Fwq" firstAttribute="top" secondItem="zcH-q9-465" secondAttribute="bottom" id="nys-IO-C9c"/>
+                            <constraint firstItem="itV-mM-Sjy" firstAttribute="centerX" secondItem="0fa-Eh-DvC" secondAttribute="centerX" id="tQD-gj-iMs"/>
                             <constraint firstItem="sdq-yL-2Un" firstAttribute="top" secondItem="8wJ-va-NdX" secondAttribute="bottom" constant="40" id="zcy-Rg-PNe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DPE-sw-LRU"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="0iI-tI-VAR" id="bfd-8m-sB4"/>
+                        <outlet property="spinner" destination="itV-mM-Sjy" id="uYQ-Cn-IXV"/>
+                        <outlet property="usernameTxt" destination="NZq-9w-qmP" id="uM1-sL-cJl"/>
                         <segue destination="PmK-9p-IvR" kind="show" identifier="toCreateAccount" id="sKf-G6-FeD"/>
                     </connections>
                 </viewController>
@@ -449,7 +461,7 @@
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-qd-O3I">
                                 <rect key="frame" x="169" y="215" width="37" height="37"/>
-                                <color key="color" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.3673953969" green="0.53302006710000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

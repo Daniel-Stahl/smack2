@@ -15,6 +15,7 @@ let BASE_URL = "https://smack2app.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
 // Colors
 let smackPurplePalceHolder = #colorLiteral(red: 0.3147586286, green: 0.5386250615, blue: 1, alpha: 0.5)
@@ -36,5 +37,10 @@ let USER_EMAIL = "userEmail"
 
 // Headers
 let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]
+
+let BEARER_HEADER = [
+    "Authorization": "Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset=utf-8"
 ]
