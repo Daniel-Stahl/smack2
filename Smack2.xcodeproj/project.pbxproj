@@ -30,6 +30,7 @@
 		43A254C61FEB34E000F942AC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A254C51FEB34E000F942AC /* LoginVC.swift */; };
 		43BC16542012A99B00D7D894 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC16532012A99B00D7D894 /* Message.swift */; };
 		43BC167F201662E000D7D894 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC167E201662E000D7D894 /* KeyboardBoundView.swift */; };
+		43BC16812016666A00D7D894 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC16802016666A00D7D894 /* MessageCell.swift */; };
 		43F48FE11FE0980A000ACE08 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F48FE01FE0980A000ACE08 /* ChatVC.swift */; };
 		43F48FE31FE0A589000ACE08 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F48FE21FE0A589000ACE08 /* ChannelVC.swift */; };
 		43F48FE41FE0A9E4000ACE08 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F48FDB1FE093F2000ACE08 /* SWRevealViewController.m */; };
@@ -63,6 +64,7 @@
 		43A254C51FEB34E000F942AC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		43BC16532012A99B00D7D894 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		43BC167E201662E000D7D894 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		43BC16802016666A00D7D894 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		43F48FDA1FE093F2000ACE08 /* Smack2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack2-Bridging-Header.h"; sourceTree = "<group>"; };
 		43F48FDB1FE093F2000ACE08 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		43F48FDC1FE093F3000ACE08 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				438B11AD1FFC515300F552DF /* AvatarCell.swift */,
 				438B11B32003F07600F552DF /* CircleImage.swift */,
 				43632801200EA3C900D94EE9 /* ChannelCell.swift */,
+				43BC16802016666A00D7D894 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				43632802200EA3C900D94EE9 /* ChannelCell.swift in Sources */,
 				43F48FE11FE0980A000ACE08 /* ChatVC.swift in Sources */,
 				438B11AC1FFC4EEF00F552DF /* AvatarPickerVC.swift in Sources */,
+				43BC16812016666A00D7D894 /* MessageCell.swift in Sources */,
 				433A330E1FF4744E00CB2CC3 /* RoundedButton.swift in Sources */,
 				43BC16542012A99B00D7D894 /* Message.swift in Sources */,
 				43632800200D70DE00D94EE9 /* Channel.swift in Sources */,
