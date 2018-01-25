@@ -148,9 +148,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra2-0b-Urf">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ra2-0b-Urf" firstAttribute="leading" secondItem="ZAj-a0-ddr" secondAttribute="leading" constant="8" id="1MS-cH-qoY"/>
                             <constraint firstItem="BUy-sx-DG1" firstAttribute="top" secondItem="puy-3o-BiQ" secondAttribute="top" id="NoA-t8-gqn"/>
                             <constraint firstItem="zhd-Hs-AoA" firstAttribute="top" secondItem="Ph4-ai-Lf1" secondAttribute="bottom" constant="30" id="WYX-Rr-eb8"/>
                             <constraint firstItem="zhd-Hs-AoA" firstAttribute="leading" secondItem="ZAj-a0-ddr" secondAttribute="leading" id="Z2p-O6-4hu"/>
@@ -160,6 +167,7 @@
                             <constraint firstItem="Ph4-ai-Lf1" firstAttribute="leading" secondItem="ZAj-a0-ddr" secondAttribute="leading" id="oAN-JG-vHQ"/>
                             <constraint firstItem="BUy-sx-DG1" firstAttribute="leading" secondItem="ZAj-a0-ddr" secondAttribute="leading" id="smd-B4-VT3"/>
                             <constraint firstItem="ZAj-a0-ddr" firstAttribute="trailing" secondItem="Ph4-ai-Lf1" secondAttribute="trailing" id="srO-3j-kDp"/>
+                            <constraint firstItem="zhd-Hs-AoA" firstAttribute="top" secondItem="Ra2-0b-Urf" secondAttribute="bottom" constant="6" id="xqS-U4-SZk"/>
                             <constraint firstItem="ZAj-a0-ddr" firstAttribute="trailing" secondItem="zhd-Hs-AoA" secondAttribute="trailing" id="ybu-5o-fAO"/>
                             <constraint firstItem="Ph4-ai-Lf1" firstAttribute="top" secondItem="BUy-sx-DG1" secondAttribute="bottom" id="yeQ-ZE-cGL"/>
                             <constraint firstItem="zhd-Hs-AoA" firstAttribute="bottom" secondItem="ZAj-a0-ddr" secondAttribute="bottom" id="zkz-aK-Y1z"/>
@@ -172,6 +180,7 @@
                         <outlet property="messageTextBox" destination="zhd-Hs-AoA" id="F3R-bl-qUC"/>
                         <outlet property="sendButton" destination="Sg0-pd-Kfn" id="T23-p2-YDu"/>
                         <outlet property="tableView" destination="Ph4-ai-Lf1" id="q22-kJ-ogm"/>
+                        <outlet property="typingUserLbl" destination="Ra2-0b-Urf" id="dXD-Mw-uxP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxJ-dv-RPF" userLabel="First Responder" sceneMemberID="firstResponder"/>

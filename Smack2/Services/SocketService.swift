@@ -21,7 +21,6 @@ class SocketService: NSObject {
     
     func establishConnection() {
         socket.connect()
-        
     }
     
     func closeConnection() {
@@ -70,6 +69,15 @@ class SocketService: NSObject {
             }
         }
     }
+    
+    func getTypingUsers(_ completionHandler: @escaping (_ typingUsers: [String: String]) -> Void) {
+        socket.on("userTypingUpdate") { (dataArray, ack) in
+            guard let typingUsers = dataArray[0] as? [String: String] else {return}
+            completionHandler(typingUsers)
+        }
+    }
+    
+    
     
     
     
